@@ -45,7 +45,7 @@ My pipeline follows this steps:
 [image6]: ./demo_images/demo5.jpg "Lines computed with linear regression"
 [image7]: ./demo_images/demo6.jpg "Lane lines over original image"
 
-"./demo_images/demo%s.jpg" % i
+
 
 ![alt text][image1]
 
