@@ -55,6 +55,7 @@ My pipeline follows this steps:
 ![alt text][image6]
 ![alt text][image7]
 
+I have detected positive and negative slopes on the segments the hough lines straight lines detection function. After getting a group of positive and negative sloped segments, I adjust a straight line with fitline function from opencv using DIST_FAIR technique. I used a fixed height for the lines, but you could calculate a interception point and adjust height to that value. Lines are being drawn with "point slope" equations the fitline function gives.
 
 
 ### 2. Identify potential shortcomings with your current pipeline
@@ -62,11 +63,11 @@ My pipeline follows this steps:
 
 One potential shortcoming would be what would happen when lanes are curved 
 
-Another shortcoming could be ...
+Another shortcoming could be the lines are adjusted without "memory", so the change on slope sometimes is so abrupt and sometimes a line is almost horizontal when white/yellow cars and signals pass throught the filter and are mistakenly detected as lines. 
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be to have memory and stablish a maximum slope change from last photogram to improve smoothiness.
 
-Another potential improvement could be to ...
+Another potential improvement could be to better adjust the filters to improve behaviour when contrast conditions or light are worse.
