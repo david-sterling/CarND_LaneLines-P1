@@ -37,9 +37,15 @@ My pipeline follows this steps:
 10) Lines are computed from segments using linear regression
 11) Lanes lines are drawn on original images
 
+[image1]: ./demo_images/demo0.jpg "White filter"
+[image2]: ./demo_images/demo1.jpg "Yellow filter"
+[image3]: ./demo_images/demo2.jpg "White and yellow bitwise and"
+[image4]: ./demo_images/demo3.jpg "Gaussian processing"
+[image5]: ./demo_images/demo4.jpg "Canny edges filter"
+[image6]: ./demo_images/demo5.jpg "Lines computed with linear regression"
+[image7]: ./demo_images/demo6.jpg "Lane lines over original image"
 
-
-
+"./demo_images/demo%s.jpg" % i
 
 ![alt text][image1]
 
