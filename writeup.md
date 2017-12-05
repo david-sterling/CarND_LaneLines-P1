@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+
 
 ---
 
@@ -48,7 +48,12 @@ My pipeline follows this steps:
 
 
 ![alt text][image1]
-
+![alt text][image2]
+![alt text][image3]
+![alt text][image4]
+![alt text][image5]
+![alt text][image6]
+![alt text][image7]
 
 
 
