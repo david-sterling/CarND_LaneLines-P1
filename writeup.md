@@ -30,11 +30,12 @@ My pipeline follows this steps:
 3) Both filters are fused, result image have only yellow and white elements
 4) Image is converted to grayscale for easier manipulation
 5) Then is softened with a blur gaussian filter to help with straight segments identification
-6) Region of interest mask removes the image outside the zone outside where the lanes are expected with the current car camera setup 
-7) Hough transform is applied then line segments of a minimum of 50pix are detected and the points are used
-8) Segments are classified by positive and negative slopes (left and right lane lines)
-9) Lines are computed from segments using linear regression
-10) Lanes lines are drawn on original images
+6) Canny process is applied to detect all edges on the image
+7) Region of interest mask removes the image outside the zone outside where the lanes are expected with the current car camera setup 
+8) Hough transform is applied then line segments of a minimum of 50pix are detected and the points are used
+9) Segments are classified by positive and negative slopes (left and right lane lines)
+10) Lines are computed from segments using linear regression
+11) Lanes lines are drawn on original images
 
 
 
